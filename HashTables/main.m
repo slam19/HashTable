@@ -7,11 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HashTable.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        HashTable *hashTable = [[HashTable alloc]initWithSize:100000];
+        [hashTable fillTableWithRandomInt];
+//        for(int i = 0; i<1000; i++){
+//            printf("%d, ", hashTable.table[i]);
+//        }
+        int sumOfCollisions = 0;
+        for(int i = 0; i<100000; i++){
+            sumOfCollisions += [hashTable searchMiss];
+        }
+        printf("Collisions: %f", (double) sumOfCollisions/100000);
     }
     return 0;
 }
+

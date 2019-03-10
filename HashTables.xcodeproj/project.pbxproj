@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		82ADAC42221F31DD00F50A3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ADAC41221F31DD00F50A3B /* main.m */; };
+		82ADAC4A221F321500F50A3B /* HashTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ADAC49221F321500F50A3B /* HashTable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		82ADAC3E221F31DD00F50A3B /* HashTables */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HashTables; sourceTree = BUILT_PRODUCTS_DIR; };
 		82ADAC41221F31DD00F50A3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		82ADAC48221F320B00F50A3B /* HashTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashTable.h; sourceTree = "<group>"; };
+		82ADAC49221F321500F50A3B /* HashTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HashTable.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,8 @@
 		82ADAC40221F31DD00F50A3B /* HashTables */ = {
 			isa = PBXGroup;
 			children = (
+				82ADAC48221F320B00F50A3B /* HashTable.h */,
+				82ADAC49221F321500F50A3B /* HashTable.m */,
 				82ADAC41221F31DD00F50A3B /* main.m */,
 			);
 			path = HashTables;
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82ADAC4A221F321500F50A3B /* HashTable.m in Sources */,
 				82ADAC42221F31DD00F50A3B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
